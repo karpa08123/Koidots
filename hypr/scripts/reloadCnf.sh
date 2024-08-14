@@ -5,11 +5,12 @@
 killall waybar
 killall hyprpaper
 killall kanshi
+dropbox stop
 killall dropbox
 killall dunst
 
 waybar &
 hyprpaper &
 kanshi &
-dropbox &
+dropbox start &
 dunst &
