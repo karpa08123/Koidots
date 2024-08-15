@@ -1,4 +1,4 @@
-# Dependencys
+# Dependencies
 - kanshi
 - Hyprlock
 - brightnessctl
@@ -9,7 +9,7 @@
 - JetBrains Mono font
 - Meslo fonts
 
-# Dependency installation for fedora
+# Dependencies installation for fedora
 This command just installs some of the dependencys. *Do not install the fonts*.
 ```bash
 sudo dnf install kanshi hyprlock brightnessctl rofi kitty hyprpaper fastfetch
