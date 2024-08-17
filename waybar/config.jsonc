@@ -11,11 +11,25 @@
 
 // positions generated based on config.ctl //
 
-	"modules-left": ["custom/padd","custom/l_end","custom/power","custom/r_end","custom/l_end","hyprland/workspaces","custom/r_end","custom/l_end","custom/spotify","custom/r_end","custom/padd"],
-	"modules-center": ["custom/padd","custom/l_end","idle_inhibitor","clock","custom/r_end","custom/padd"],
-	"modules-right": ["custom/padd","custom/l_end","power-profiles-daemon","tray","battery","custom/r_end","custom/l_end","backlight","network","pulseaudio","pulseaudio#microphone","custom/notifications","custom/r_end","custom/padd"],
+	"modules-left": ["custom/padd","custom/l_end","custom/power","custom/r_end","custom/l_end","wlr/taskbar","custom/spotify","custom/r_end","custom/padd"],
+	"modules-center": ["custom/padd","custom/l_end","hyprland/workspaces","custom/r_end","custom/padd"],
+	"modules-right": ["custom/padd","custom/l_end","power-profiles-daemon","tray","custom/notifications","custom/r_end","custom/l_end","backlight","network","pulseaudio","battery","custom/r_end","custom/l_end","idle_inhibitor","clock","custom/r_end","custom/padd"],
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+
+    "wlr/taskbar": {
+		"format": "{icon}",
+		"rotate": 0,
+		"icon-size": 18,
+		"icon-theme": "Tela-circle-dracula",
+        "spacing": 0,
+		"tooltip-format": "{title}",
+		"on-click": "activate",
+		"on-click-middle": "close",
+		"app_ids-mapping": {
+			"firefoxdeveloperedition": "firefox-developer-edition"
+		}
+	  },
 
     "custom/spotify": {
         "exec": "python /home/karpa/.config/waybar/scripts/mediaplayer.py --player spotify &",
@@ -180,9 +194,9 @@
         "rotate": 0,
         "format-muted": "婢",
         "on-click": "pavucontrol -t 3",
-        "on-click-middle": "",
-        "on-scroll-up": "",
-        "on-scroll-down": "",
+        "on-click-middle": "wpctl set-mute @DEFAULT_SINK@ toggle",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
         "tooltip-format": "{icon} {desc} // {volume}%",
         "scroll-step": 5,
         "format-icons": {

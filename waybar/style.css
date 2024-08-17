@@ -7,7 +7,8 @@
     min-height: 10px;
 }
 
-@import "theme.css";
+/*@import "theme.css";*/
+@import "themeBN.css";
 
 window#waybar {
     background: @bar-bg;
