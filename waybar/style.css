@@ -66,22 +66,15 @@ tooltip {
     animation: tb_normal 20s ease-in-out 1;
 }
 
-#taskbar button.active {
-    background: @wb-hvr-bg;
-    color: @wb-hvr-bg;
-    margin-left: 3px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 3px;
-    animation: tb_active 20s ease-in-out 1;
-    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
-}
-
 #taskbar button:hover {
     background: @wb-hvr-bg;
-    color: @wb-hvr-color;
+    color: @wb-hvr-bg;
     animation: tb_hover 20s ease-in-out 1;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button.visible{
+    color: @wb-hvr-bg;
 }
 
 #tray menu * {
