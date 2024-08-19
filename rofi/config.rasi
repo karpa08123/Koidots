@@ -1,1 +1,5 @@
-@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+//@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+//@theme "/usr/share/rofi/themes/Adapta-Nokto.rasi"
+//@theme "/home/karpa/.config/rofi/themes/spotlight-dark.rasi"
+//@theme "/home/karpa/.config/rofi/themes/testmenu1.rasi"
+@theme "/home/karpa/.config/rofi/themes/testmenu2.rasi"
