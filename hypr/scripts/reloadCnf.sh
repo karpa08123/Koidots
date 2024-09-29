@@ -8,9 +8,11 @@ killall kanshi
 dropbox stop
 killall dropbox
 killall dunst
+killall hypridle
 
 waybar &
 hyprpaper &
 kanshi &
 dropbox start &
 dunst &
+hypridle &
