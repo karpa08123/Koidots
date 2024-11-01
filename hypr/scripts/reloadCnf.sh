@@ -9,6 +9,7 @@ dropbox stop
 killall dropbox
 killall dunst
 killall hypridle
+killall nm-applet
 
 waybar &
 hyprpaper &
@@ -16,3 +17,4 @@ kanshi &
 dropbox start &
 dunst &
 hypridle &
+nm-applet
